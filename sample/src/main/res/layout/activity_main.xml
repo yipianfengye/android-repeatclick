@@ -1,19 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="sample.repeatclick.com.android_repeatclick.MainActivity">
+    android:orientation="vertical"
+    >
 
     <TextView
+        android:id="@+id/main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
-        app:layout_constraintRight_toRightOf="@+id/activity_main"
-        app:layout_constraintTop_toTopOf="@+id/activity_main" />
+        android:text="测试android组件点击事件"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <sample.repeatclick.com.android_repeatclick.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:rv_alpha="255"
+        app:rv_color="#ffffff"
+        app:rv_type="rectangle"
+        >
+
+        <Button
+            android:id="@+id/main_fastbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试快速点击事件"
+            android:textColor="#4aa3f7"
+            android:textSize="18dp"
+            />
+
+    </sample.repeatclick.com.android_repeatclick.RippleView>
+
+    <sample.repeatclick.com.android_repeatclick.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:rv_alpha="255"
+        app:rv_color="#ffffff"
+        app:rv_type="rectangle"
+        >
+        <Button
+            android:id="@+id/main_networkbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试网络点击事件"
+            android:textColor="#4aa3f7"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </sample.repeatclick.com.android_repeatclick.RippleView>
+
+    <sample.repeatclick.com.android_repeatclick.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:rv_alpha="255"
+        app:rv_color="#ffffff"
+        app:rv_type="rectangle"
+        >
+        <Button
+            android:id="@+id/main_loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试登录点击事件"
+            android:textColor="#4aa3f7"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </sample.repeatclick.com.android_repeatclick.RippleView>
+
+    <sample.repeatclick.com.android_repeatclick.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:rv_alpha="255"
+        app:rv_color="#ffffff"
+        app:rv_type="rectangle"
+        >
+        <Button
+            android:id="@+id/main_costombutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试定制化点击事件"
+            android:textColor="#4aa3f7"
+            android:textSize="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+    </sample.repeatclick.com.android_repeatclick.RippleView>
+
+</LinearLayout>
