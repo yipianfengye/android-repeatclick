@@ -10,7 +10,7 @@ public abstract class OnClickFastListener extends BaseClickListener {
 
     // 防止快速点击默认等待时长为900ms
     private long DELAY_TIME = 900;
-    private long lastClickTime;
+    private static long lastClickTime;
 
     private boolean isFastDoubleClick() {
         long time = System.currentTimeMillis();
